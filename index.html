@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisconsin Cheese Festival - Registration</title>
+</head>
+
+<body>
+
+  <!-- ===== SKIP NAVIGATION ===== -->
+  <!-- Lets keyboard users jump past the header/nav straight to main content -->
+  <a href="#main">Skip to main content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <p>Wisconsin Cheese Festival</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <h1>Wisconsin Cheese Festival</h1>
+      <p>Join us for a full weekend celebrating Wisconsin's proud cheesemaking heritage. Sample award-winning cheeses
+        from over 40 local creameries, watch live cheese-making demonstrations, and enjoy food, music, and family
+        activities all weekend long.</p>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+      <h2>About the Festival</h2>
+      <p>The Wisconsin Cheese Festival brings together the state's best creameries, cheesemakers, and food artisans for
+        one unforgettable weekend. Now in its twelfth year, the festival has grown from a small county gathering into
+        one of the Midwest's largest celebrations of dairy craftsmanship.</p>
+      <p>Whether you're a lifelong cheese enthusiast or just curious about how your favorite cheddar is made, there's
+        something here for everyone. Guided tastings, cheesemaker meet-and-greets, and hands-on demonstrations run
+        throughout each day.</p>
+      <h3>What to Expect</h3>
+      <p>Expect over 40 creamery booths, live cheese-curd-making demonstrations every hour, a kids' activity tent, and
+        food trucks featuring cheese-forward dishes from around the state. Parking and shuttle service are available at
+        the fairgrounds.</p>
+    </section>
+
+    <!-- ===== SCHEDULE SECTION ===== -->
+    <section id="schedule">
+      <h2>Festival Schedule</h2>
+      <p>The festival runs Friday evening through Sunday afternoon. Below is a general overview of each day — a detailed
+        hour-by-hour schedule will be emailed to registered attendees one week before the event.</p>
+      <ul>
+        <li>Friday: Opening reception and evening tastings, 5:00 PM - 9:00 PM</li>
+        <li>Saturday: Full festival day, creamery booths and demonstrations, 10:00 AM - 6:00 PM</li>
+        <li>Sunday: Family day, kids' activities and closing tastings, 10:00 AM - 4:00 PM</li>
+      </ul>
+      <h3>Cheesemaker Demonstrations</h3>
+      <p>Live demonstrations are held every hour on the main stage. Featured cheesemakers this year include creameries
+        from Green County, Door County, and the Fox Valley region.</p>
+    </section>
+
+    <!-- ===== REGISTRATION FORM ===== -->
+    <section id="register">
+      <h2>Register for the Festival</h2>
+      <p>Complete the form below to reserve your spot. Registration includes entry for all three days and one
+        complimentary tasting flight.</p>
+
+      <form action="#" method="post">
+
+        <div>
+          <label for="full-name">Full Name</label><br>
+          <input type="text" id="full-name" name="full-name" placeholder="Jane Doe" required>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label><br>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="555-123-4567">
+        </div>
+
+        <div>
+          <label for="guest-count">Number of Guests</label><br>
+          <input type="number" id="guest-count" name="guest-count" min="1" max="10" value="1">
+        </div>
+
+        <div>
+          <label for="attend-date">Preferred Attendance Date</label><br>
+          <input type="date" id="attend-date" name="attend-date" required>
+        </div>
+
+        <!-- fieldset + legend groups related radio buttons under one accessible name -->
+        <fieldset>
+          <legend>Ticket Type</legend>
+          <input type="radio" id="ticket-single" name="ticket-type" value="single-day" required>
+          <label for="ticket-single">Single Day Pass</label><br>
+          <input type="radio" id="ticket-weekend" name="ticket-type" value="weekend">
+          <label for="ticket-weekend">Full Weekend Pass</label><br>
+          <input type="radio" id="ticket-vip" name="ticket-type" value="vip">
+          <label for="ticket-vip">VIP Pass (includes reserved seating)</label>
+        </fieldset>
+
+        <!-- optgroup organizes long option lists into labeled categories -->
+        <div>
+          <label for="region">Where Are You Traveling From?</label><br>
+          <select id="region" name="region">
+            <optgroup label="Wisconsin">
+              <option value="madison">Madison Area</option>
+              <option value="milwaukee">Milwaukee Area</option>
+              <option value="green-county">Green County</option>
+              <option value="door-county">Door County</option>
+            </optgroup>
+            <optgroup label="Other States">
+              <option value="illinois">Illinois</option>
+              <option value="minnesota">Minnesota</option>
+              <option value="iowa">Iowa</option>
+              <option value="other">Other</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Same fieldset + legend pattern used again for a checkbox group -->
+        <fieldset>
+          <legend>Interests</legend>
+          <input type="checkbox" id="interest-tasting" name="interests" value="tasting">
+          <label for="interest-tasting">Guided Tastings</label><br>
+          <input type="checkbox" id="interest-demo" name="interests" value="demo">
+          <label for="interest-demo">Cheesemaking Demonstrations</label><br>
+          <input type="checkbox" id="interest-kids" name="interests" value="kids">
+          <label for="interest-kids">Kids' Activities</label>
+        </fieldset>
+
+        <div>
+          <label for="notes">Dietary Restrictions or Special Requests</label><br>
+          <textarea id="notes" name="notes" rows="4"
+            placeholder="Let us know about any allergies or accommodations you need."></textarea>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Wisconsin Cheese Festival. For educational use. Questions? Contact us at info@example.com.</p>
+  </footer>
+
+</body>
+
+</html>
